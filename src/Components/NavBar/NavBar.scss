@@ -1,0 +1,92 @@
+@import "../../scss/variables.scss";
+@import url("https://unpkg.com/ionicons@5.2.3/dist/ionicons.js");
+
+.navContainer {
+  height: 60px;
+  width: 100%;
+  background-color: rgb(44, 43, 43);
+  position: fixed;
+  box-shadow: 2px 2px 2px #ccc;
+
+  ul {
+    display: flex;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    height: 100%;
+    box-shadow: 2px 2px 2px #ccc;
+    // align-items: center;
+    figure {
+      margin-block-start: 5px;
+      margin-block-end: 0;
+      margin-inline-start: 2px;
+      margin-inline-end: 0;
+      cursor: pointer;
+    }
+
+    .nav-link {
+      // display: flex;
+      // color: white;
+      // text-decoration: none;
+      cursor: pointer;
+      padding: 10px 20px;
+      // align-items: center;
+
+      .active {
+        background-color: blue;
+      }
+    }
+    .nav-link:hover {
+      color: rgb(101, 101, 212);
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      color: white;
+      text-decoration: none;
+    }
+
+    i {
+      margin-right: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 759px) {
+  .navContainer {
+    ul {
+      background-color: rgb(44, 43, 43);
+      height: 100%;
+      width: 300px;
+      left: -240px;
+      position: fixed;
+
+      top: 60px;
+      flex-direction: column;
+
+      &.active {
+        left: 0px;
+      }
+
+      nav-link {
+        width: 100px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 20px;
+        margin-right: 13px;
+      }
+      figure {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+      }
+
+      a {
+        justify-content: space-between;
+        flex-direction: row;
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}
