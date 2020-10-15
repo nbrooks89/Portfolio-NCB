@@ -4,9 +4,8 @@ import IosMail from "react-ionicons/lib/IosMail";
 import IosWoman from "react-ionicons/lib/IosWoman";
 import IosApps from "react-ionicons/lib/IosApps";
 import IosBriefcase from "react-ionicons/lib/IosBriefcase";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import "./NavBar.scss";
+
+import "../../scss/NavBar.scss";
 import Scroll from "react-scroll";
 
 const ScrollLink = Scroll.Link;
@@ -17,22 +16,11 @@ const NavBar = (props) => {
   return (
     <>
       <div className="navContainer">
-        {/* <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon" />
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav"> */}
         <ul className={navOpen ? "active" : ""}>
           <figure onClick={() => setNavOpen(!navOpen)}>
             <IosApps fontSize="35px" color="white" />
           </figure>
+
           <ScrollLink
             className="nav-link"
             to="home"

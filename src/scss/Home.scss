@@ -1,0 +1,102 @@
+@import "variables";
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poller+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat+Subrayada:wght@700&family=Noto+Sans&family=Noto+Sans+JP&family=Noto+Serif+TC:wght@300&family=Poller+One&display=swap");
+.homeContainer {
+  height: 100vh;
+  background-color: rgb(214, 154, 76);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 3px solid rgb(82, 80, 78);
+}
+
+.box {
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.triangle {
+  margin-right: 10px;
+  margin-left: 10px;
+  align-self: center;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+
+  border-top: 50px solid rgb(3, 3, 3);
+}
+.triangleup {
+  margin-right: 10px;
+  margin-left: 10px;
+  align-self: center;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+
+  border-bottom: 50px solid rgb(2, 2, 2);
+}
+
+.myName {
+  display: flex;
+  font-size: 85px;
+
+  // font-family: "Press Start 2P", cursive;
+  font-family: "Montserrat Subrayada", sans-serif;
+}
+
+.underline {
+  height: 2px;
+  width: 500px;
+  background-color: black;
+}
+
+.webDeveloper {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.arrow {
+  cursor: pointer;
+
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .myName {
+    font-size: 40px;
+    text-align: center;
+    // font-family: "Press Start 2P", cursive;
+    font-family: "Poller One", cursive;
+    margin-left: 40px;
+  }
+
+  .underline {
+    height: 2px;
+    width: 200px;
+    background-color: black;
+    margin-left: 40px;
+  }
+
+  .webDeveloper {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 40px;
+  }
+
+  .box {
+    margin-top: 300px;
+    margin-left: 25px;
+  }
+  .arrow {
+    margin-left: 40px;
+  }
+}

@@ -1,10 +1,16 @@
 import React from "react";
-import "./Projects.scss";
+import "../../scss/Projects.scss";
 
 function Projects() {
   return (
-    <div className=" projectsContainer">
-      <div>projects</div>
+    <div className=" projects-container">
+      <div className="projects-header">Projects</div>
+      <div className="projects-inner-container">
+        <div className="projects"></div>
+        <div className="projects"></div>
+        <div className="projects"></div>
+        <div className="projects"></div>
+      </div>
     </div>
   );
 }
