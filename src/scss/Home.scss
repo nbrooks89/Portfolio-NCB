@@ -75,28 +75,49 @@
     font-size: 40px;
     text-align: center;
     // font-family: "Press Start 2P", cursive;
-    font-family: "Poller One", cursive;
-    margin-left: 40px;
+    font-family: "Montserrat Subrayada", sans-serif;
   }
 
   .underline {
     height: 2px;
     width: 200px;
     background-color: black;
-    margin-left: 40px;
   }
 
   .webDeveloper {
     font-size: 25px;
     margin-top: 10px;
-    margin-left: 40px;
   }
 
   .box {
     margin-top: 300px;
-    margin-left: 25px;
+    // margin-left: 25px;
   }
-  .arrow {
-    margin-left: 40px;
+  // .arrow {
+  //   margin-left: 40px;
+  // }
+
+  .triangleup {
+    margin-right: 10px;
+    margin-left: 10px;
+    align-self: center;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+
+    border-bottom: 40px solid rgb(2, 2, 2);
+  }
+
+  .triangle {
+    margin-right: 10px;
+    margin-left: 10px;
+    align-self: center;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+
+    border-top: 40px solid rgb(3, 3, 3);
   }
 }

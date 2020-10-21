@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat+Subrayada:wght@700&family=Noto+Sans&family=Noto+Sans+JP&family=Noto+Serif+TC:wght@300&family=Poller+One&display=swap");
-.projects-container {
-  height: 100vh;
+.projectsContainer {
   margin: 0 100px;
   margin-top: 50px;
   display: -webkit-box;
@@ -10,17 +9,20 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .projects-header {
   font-family: "Montserrat Subrayada", sans-serif;
   color: #242522;
-  font-size: 85px;
+  font-size: 75px;
+  margin-top: 50px;
 }
 
 .projects-inner-container {
-  padding: 10px;
-  overflow: hidden;
+  margin: 0px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
@@ -28,20 +30,261 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
-  grid-gap: 3rem;
-  margin-top: 80px;
+  grid-gap: 2em;
+  margin-top: 70px;
 }
 
 .projects {
-  padding: 5px;
-  border: 2px solid #878e88;
+  border: 2px solid #343835;
   text-align: center;
-  height: 100%;
   display: -ms-grid;
   display: grid;
   justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0;
-  background-color: #dedfde;
-  border-radius: 5px;
+  background-color: rgba(95, 158, 160, 0.297);
+  position: relative;
+}
+
+.info-button {
+  background-color: transparent;
+  z-index: 1;
+  position: absolute;
+  top: 70px;
+  border: 1px solid black;
+  font-size: 14px;
+  padding: 2px 5px;
+  cursor: pointer;
+}
+
+.info-button:hover {
+  background-color: #539c8f;
+  border: 1px solid black;
+}
+
+.description {
+  visibility: hidden;
+  z-index: 1;
+  position: absolute;
+  top: 70px;
+}
+
+.description2 {
+  z-index: 1;
+  position: absolute;
+  bottom: 60px;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.external-links {
+  z-index: 1;
+  position: absolute;
+  bottom: 10px;
+}
+
+.svg-inline--fa {
+  font-size: 1.5em;
+}
+
+.external-links a {
+  color: #539c8f;
+}
+
+.external-links a:hover {
+  color: #d69a4c;
+}
+
+.projects-img {
+  opacity: 0.1;
+}
+
+.name-x {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.name-button {
+  height: 20px;
+  widows: 20px;
+  color: #539c8f;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.name-button:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.app-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 20px;
+  font-size: 25px;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.underline-name {
+  height: 1px;
+  width: 20px;
+  background-color: #539c8f;
+  margin: 0 10px;
+}
+
+.underline-projects {
+  height: 4px;
+  width: 430px;
+  background-color: #539c8f;
+}
+
+.modalBackground {
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  position: absolute;
+  z-index: 3;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 100%;
+  min-height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modalShowing-true {
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.modal-inner {
+  background: #2c2b2b;
+  width: 900px;
+  max-width: calc(100% - 60px);
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #539c8f;
+}
+
+.modal-img img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.modal-text {
+  padding: 15px;
+  font-size: 15px;
+  color: white;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal-text2 {
+  padding: 15px;
+  font-size: 13px;
+  color: white;
+  padding-left: 0;
+  font-style: italic;
+  padding-top: 20px;
+}
+
+.app-name-modal {
+  font-size: 22px;
+  font-weight: 500;
+  color: #539c8f;
+  margin-bottom: 20px;
+  font-family: "Montserrat Subrayada", sans-serif;
+}
+
+.external-links-modal a {
+  color: WHITE;
+}
+
+.external-links-modal a:hover {
+  color: #539c8f;
+}
+
+@media screen and (max-width: 1184px) {
+  .projectsContainer {
+    margin: 0 40px;
+  }
+  .projects-header {
+    font-family: "Montserrat Subrayada", sans-serif;
+    color: #242522;
+    font-size: 65px;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .projects-header {
+    font-size: 55px;
+  }
+  .info-button {
+    display: none;
+  }
+  .description {
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .projectsContainer {
+    margin: 0 10px;
+  }
+  .description {
+    z-index: 1;
+    position: absolute;
+    top: 70px;
+  }
+  .info-button {
+    display: none;
+  }
+  .projects-header {
+    font-size: 35px;
+    margin-top: 30px;
+  }
+  .projects-inner-container {
+    margin-top: 25px;
+  }
+  .underline-projects {
+    height: 4px;
+    width: 300px;
+    background-color: #539c8f;
+  }
+  .svg-inline--fa {
+    font-size: 1.5em;
+  }
 }
 /*# sourceMappingURL=Projects.css.map */

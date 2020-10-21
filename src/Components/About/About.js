@@ -5,7 +5,7 @@ import image3 from "./meprofile3.jpeg";
 function About() {
   return (
     <>
-      <div className=" aboutContainer">
+      <div className="aboutContainer">
         <div className="aboutBox">
           <div className="triangleLeft">
             <div className="triangleLeft1"></div>
