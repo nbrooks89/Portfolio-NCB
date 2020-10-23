@@ -1,7 +1,7 @@
 import React from "react";
 import "../../scss/Home.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowAltCircleDown } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
 
 import Scroll from "react-scroll";
 const ScrollLink = Scroll.Link;
@@ -18,16 +18,18 @@ function Home() {
           <div className="underline"></div>
           <div className="webDeveloper"> Full Stack Web Developer</div>
         </div>
-        <ScrollLink
-          className="arrow"
-          to="about"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-        >
-          <FontAwesomeIcon icon={faArrowAltCircleDown} size="3x" />
-        </ScrollLink>
+        <div className="home-scroll-button">
+          <ScrollLink
+            className="arrow"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            <FontAwesomeIcon icon={faAngleDoubleDown} />
+          </ScrollLink>
+        </div>
       </div>
     </>
   );

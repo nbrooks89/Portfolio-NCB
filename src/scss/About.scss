@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP&family=Poller+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP&family=Noto+Serif+TC:wght@300&family=Poller+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat+Subrayada:wght@700&family=Noto+Sans&family=Noto+Sans+JP&family=Noto+Serif+TC:wght@300&family=Poller+One&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Mukta:wght@300&display=swap");
 .aboutContainer {
   margin: 0 100px;
   margin-top: 20px;
@@ -12,45 +12,37 @@
   flex-direction: column;
 }
 
+.helloContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
 .aboutBox {
   display: flex;
   height: 600px;
   justify-content: center;
 }
 
-.triangleLeft {
-  width: 0;
-  height: 0;
-  border-top: 265px solid transparent;
-  border-right: 400px solid $dark-grey;
-  border-bottom: 30px solid transparent;
-  margin-right: 30px;
-}
-.triangleLeft1 {
-  width: 0;
-  height: 0;
-  border-top: 80px solid transparent;
-  border-right: 120px solid $light-grey;
-  border-bottom: 70px solid transparent;
+.img-hello {
+  img {
+    width: 500px;
+    height: auto;
+  }
+  display: flex;
+  margin-top: 50px;
 }
 
-.helloContainer {
-  display: flex;
-  flex-direction: column;
-}
 .hello {
   align-self: center;
-  border-top: 2px solid $dark-green;
-  padding-top: 30px;
+  border: 2px solid $dark-green;
+  padding: 30px;
   font-size: 24px;
   line-height: 2;
   font-weight: 400;
   z-index: 2;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: $light-green;
-
-  margin-left: 50px;
-  margin-top: 100px;
+  align-self: center;
 }
 .aboutMe {
   margin-top: 30px;
@@ -61,30 +53,13 @@
   font-family: "Montserrat Subrayada", sans-serif;
 }
 
-.imgTechContainer {
-  display: flex;
-  justify-content: center;
-  height: 700px;
-}
-img {
-  max-width: 100%;
-  z-index: 1;
-  border: 1px solid $dark-grey;
-}
-
-.imgContainer {
-  width: 490px;
-  margin-right: 100px;
-}
-
 .lfContainer {
-  margin-left: 20px;
-  height: 500px;
-  padding: 20px;
-  width: 400px;
-  align-self: flex-end;
+  // padding: 20px;
+  align-self: center;
   align-items: center;
-  background-color: $light-orange;
+  border: 5px solid $light-orange;
+  margin: 20px;
+  width: 80%;
 }
 
 .technologies {
@@ -107,289 +82,125 @@ img {
 
   border-top: 13px solid rgb(233, 156, 12);
 }
+
 .technologies-list {
-  margin-top: 30px;
-  height: 200px;
-  line-height: 2;
-  font-size: 22px;
+  margin: 0px;
+  // overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  align-items: center;
+  grid-gap: 2em;
+  padding: 20px;
 }
-.technologies-list-group {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 20px;
+.list-item {
+  font-size: 20px;
+  justify-self: center;
 }
 
-@media screen and (max-width: 1184px) {
+@media screen and (max-width: 1424px) {
   .aboutContainer {
-    margin: 0 40px;
-  }
-  .triangleLeft {
-    width: 0;
-    height: 0;
-    border-top: 242px solid transparent;
-    border-right: 330px solid $dark-grey;
-    border-bottom: 16px solid transparent;
-  }
-  .triangleLeft1 {
-    width: 0;
-    height: 0;
-    border-top: 80px solid transparent;
-    border-right: 120px solid $light-grey;
-    border-bottom: 70px solid transparent;
-  }
-  .aboutBox {
-    height: 480px;
-    margin: 2px;
-  }
-  .aboutMe {
-    margin-top: 30px;
-    margin-right: 20px;
-
-    font-size: 66px;
+    margin: 0 20px;
   }
   .hello {
-    font-size: 20px;
-    margin-left: 20px;
-    margin-top: 70px;
+    font-size: 22px;
   }
+}
 
-  .imgTechContainer {
-    height: 650px;
-  }
-  .technologies {
-    font-size: 20px;
-  }
-  .imgContainer {
-    width: 400px;
-    margin-right: 30px;
-  }
-  .lfContainer {
-    margin-left: 50px;
-    height: 400px;
-    padding: 17px;
-    width: 350px;
-    background-color: rgba(230, 166, 47, 0.524);
-  }
-  .technologies-list {
-    margin-top: 30px;
-
+@media screen and (max-width: 1180px) {
+  .hello {
     font-size: 19px;
   }
-}
-
-@media screen and (max-width: 900px) {
-  .triangleLeft {
-    width: 0;
-    height: 0;
-    border-top: 170px solid transparent;
-    border-right: 220px solid $dark-grey;
-    border-bottom: 12px solid transparent;
+  .technologies-list {
+    font-size: 18px;
   }
-  .triangleLeft1 {
-    width: 0;
-    height: 0;
-    border-top: 60px solid transparent;
-    border-right: 100px solid $light-grey;
-    border-bottom: 60px solid transparent;
-  }
-  .aboutBox {
-    height: 420px;
+  .img-hello {
+    img {
+      width: 400px;
+      height: auto;
+    }
   }
   .aboutMe {
-    margin-top: 30px;
-    margin-right: 20px;
-
-    font-size: 60px;
+    font-size: 70px;
   }
+}
+@media screen and (max-width: 984px) {
   .hello {
-    margin-top: 40px;
-    margin-left: 0;
-    font-size: 17px;
-  }
-
-  .imgTechContainer {
-    height: 550px;
-  }
-  .technologies {
-    font-size: 17px;
+    font-size: 18px;
   }
   .technologies-list {
-    margin-top: 30px;
-
-    font-size: 17px;
+    font-size: 18px;
   }
-  .imgContainer {
-    width: 310px;
+  .img-hello {
+    img {
+      width: 350px;
+      height: auto;
+    }
   }
-  .lfContainer {
-    margin-left: 20px;
-    height: 350px;
-    padding: 10px;
-    width: 300px;
-    background-color: rgba(230, 166, 47, 0.524);
+  .aboutMe {
+    font-size: 65px;
   }
-  .triangle-group {
+}
+@media screen and (max-width: 937px) {
+  .hello {
+    font-size: 20px;
+    margin: 20px;
+    line-height: 1.5;
+  }
+  .aboutMe {
+    font-size: 65px;
     align-self: center;
-    margin: 2px;
-    width: 0;
-    height: 0;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-
-    border-top: 9px solid rgb(241, 159, 45);
+  }
+  .img-hello {
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-hello {
+    img {
+      width: 450px;
+      height: auto;
+    }
   }
 }
 
-@media screen and (max-width: 700px) {
-  .triangleLeft {
-    width: 0;
-    height: 0;
-    border-top: 140px solid transparent;
-    border-right: 170px solid $dark-grey;
-    border-bottom: 10px solid transparent;
-  }
-  .triangleLeft1 {
-    width: 0;
-    height: 0;
-    border-top: 40px solid transparent;
-    border-right: 80px solid $light-grey;
-    border-bottom: 40px solid transparent;
-  }
-  .hello {
-    margin-top: 30px;
-    margin-left: 0;
-    font-size: 14px;
-  }
-  .aboutBox {
-    height: 360px;
-  }
-  .aboutMe {
-    margin-top: 15px;
-    margin-right: 10px;
-
-    font-size: 45px;
-  }
-
-  .imgTechContainer {
-    height: 400px;
-  }
-  .technologies {
-    font-size: 15px;
-  }
-  .imgContainer {
-    width: 250px;
-    // margin-right: 30px;
-  }
-  .triangle-group {
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-
-    border-top: 9px solid rgb(241, 159, 45);
-  }
-  .lfContainer {
-    // margin-left: 20px;
-    height: 280px;
-    width: 250px;
-    background-color: rgba(230, 166, 47, 0.524);
-    padding: 0px;
-  }
-  .technologies-list {
-    margin-top: 25px;
-
-    font-size: 15px;
-  }
-}
 @media screen and (max-width: 550px) {
-  .triangleLeft {
-    display: none;
-    width: 0;
-    height: 0;
-    border-top: 30px solid transparent;
-    border-right: 40px solid $dark-grey;
-    border-bottom: 2px solid transparent;
-  }
-  .triangleLeft1 {
-    width: 0;
-    height: 0;
-    border-top: 20px solid transparent;
-    border-right: 40px solid $light-grey;
-    border-bottom: 20px solid transparent;
-  }
   .hello {
-    text-indent: 30px;
-    font-size: 15px;
-    line-height: 2;
-    font-weight: 400;
-    margin-top: 10px;
+    font-size: 18px;
+
+    line-height: 1.5;
   }
-  .aboutBox {
-    height: 300px;
-    margin-left: 10px;
+  .img-hello {
+    img {
+      width: 300px;
+      height: auto;
+    }
   }
   .aboutMe {
-    margin-top: 5px;
-    margin-right: 10px;
-
     font-size: 40px;
   }
 
-  .imgContainer {
-    width: 280px;
-    // margin-left: 20px;
-    margin-top: 10px;
-  }
-  .lfContainer {
-    height: 100%;
-    width: 280px;
-    background-color: rgba(230, 166, 47, 0.524);
-    padding: 0px;
-    margin-left: 10px;
-    margin-top: 10px;
-    padding-bottom: 20px;
-  }
-
-  .triangle-row {
-    display: flex;
-
-    text-align: center;
-    font-family: "Noto Sans", sans-serif;
-  }
   .technologies {
     font-size: 17px;
   }
 
-  .triangle-group {
-    align-self: center;
-    margin: 2px;
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-
-    border-top: 8px solid rgb(241, 159, 45);
-  }
-  .aboutContainer {
-    margin: 0 10px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  .imgTechContainer {
-    height: 100%;
-    flex-direction: column;
-  }
   .technologies-list {
-    padding-top: 0px;
-    padding: 0px 10px;
-    font-size: 15px;
+    font-size: 18px;
+  }
+
+  .aboutContainer {
+    margin: 0 20px;
+  }
+  .lfContainer {
+    padding: 10px;
+
+    margin: 0;
+  }
+
+  .lfContainer {
+    padding: 10px;
+
+    margin: 0px;
   }
   .helloContainer {
-    height: 100%;
-  }
-  .aboutBox {
-    height: 100%;
-  }
-  .technologies-list {
-    height: 100%;
+    margin-left: 0;
   }
 }

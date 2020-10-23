@@ -85,17 +85,80 @@
   margin-top: 10px;
 }
 
-.arrow {
-  cursor: pointer;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+.home-scroll-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: bounce 0.7s infinite alternate;
+          animation: bounce 0.7s infinite alternate;
   margin-bottom: 20px;
+  cursor: pointer;
+}
+
+@-webkit-keyframes bounce {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+  }
+}
+
+@keyframes bounce {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+  }
+}
+
+.home-scroll-button .svg-inline--fa {
+  font-size: 60px;
+  height: 40px;
+}
+
+@media screen and (max-width: 894px) {
+  .myName {
+    font-size: 65px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .myName {
+    font-size: 50px;
+  }
+  .triangle {
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 40px solid #030303;
+  }
+  .triangleup {
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 40px solid #020202;
+  }
+  .underline {
+    height: 2px;
+    width: 250px;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .myName {
-    font-size: 40px;
+    font-size: 45px;
     text-align: center;
     font-family: "Montserrat Subrayada", sans-serif;
   }
@@ -112,28 +175,14 @@
     margin-top: 300px;
   }
   .triangleup {
-    margin-right: 10px;
-    margin-left: 10px;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    width: 0;
-    height: 0;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-bottom: 40px solid #020202;
+    border-bottom: 30px solid #020202;
   }
   .triangle {
-    margin-right: 10px;
-    margin-left: 10px;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    width: 0;
-    height: 0;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-top: 40px solid #030303;
+    border-top: 30px solid #030303;
   }
 }
 /*# sourceMappingURL=Home.css.map */

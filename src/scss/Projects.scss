@@ -2,11 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat+Subrayada:wght@700&family=Noto+Sans&family=Noto+Sans+JP&family=Noto+Serif+TC:wght@300&family=Poller+One&display=swap");
 
 .projectsContainer {
+  height: 100vh;
   margin: 0 100px;
-  margin-top: 50px;
+  margin-top: 70px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 .projects-header {
   font-family: "Montserrat Subrayada", sans-serif;
@@ -77,11 +77,13 @@
   // left: 25px;
 }
 
-.svg-inline--fa {
-  font-size: 1.5em;
-}
-.external-links a {
-  color: $dark-green;
+.external-links {
+  a {
+    color: $dark-green;
+    .svg-inline--fa {
+      font-size: 1.6em;
+    }
+  }
 }
 .external-links a:hover {
   color: $dark-orange;
@@ -89,6 +91,7 @@
 
 .projects-img {
   opacity: 0.1;
+  max-width: 100%;
   // position: relative;
   // z-index: 2;
 }
@@ -149,6 +152,7 @@
   opacity: 1;
   pointer-events: visible;
 }
+
 .modal-inner {
   background: rgb(44, 43, 43);
   width: 900px;
@@ -170,6 +174,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .modal-text2 {
   padding: 15px;
   font-size: 13px;
@@ -186,8 +191,14 @@
   margin-bottom: 20px;
   font-family: "Montserrat Subrayada", sans-serif;
 }
-.external-links-modal a {
-  color: WHITE;
+
+.external-links-modal {
+  a {
+    color: WHITE;
+    .svg-inline--fa {
+      font-size: 1.6em;
+    }
+  }
 }
 .external-links-modal a:hover {
   color: $dark-green;
@@ -202,7 +213,11 @@
     font-size: 65px;
   }
 }
-
+@media screen and (max-width: 1043px) {
+  .projectsContainer {
+    height: auto;
+  }
+}
 @media screen and (max-width: 725px) {
   .projects-header {
     font-size: 55px;

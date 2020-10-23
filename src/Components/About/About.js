@@ -6,12 +6,13 @@ function About() {
   return (
     <>
       <div className="aboutContainer">
-        <div className="aboutBox">
-          <div className="triangleLeft">
-            <div className="triangleLeft1"></div>
-          </div>
+        <div className="aboutMe">ABOUT ME</div>
+        <div className="img-hello">
+          {/* <div className="img-container"> */}
+          <img src={image3}></img>
+          {/* </div> */}
+
           <div className="helloContainer">
-            <div className="aboutMe">ABOUT ME</div>
             <div className="hello">
               Hello!, i'm Nikki Brooks. I'm a web developer based in Boston
               Massachusettes. I am passionate about building amazing websites
@@ -19,34 +20,31 @@ function About() {
               not coding i enjoy, skateboarding, and hanging with my dogs Paco
               and Archie.
             </div>
-          </div>
-        </div>
-        <div className="imgTechContainer">
-          <div className="imgContainer">
-            <img src={image3}></img>
-          </div>
-          <div className="lfContainer">
-            <div className="triangle-row">
-              <div className="technologies">
-                <div className="triangle-group"></div>Technical Skills
-                <div className="triangle-group"></div>
-              </div>
-            </div>
 
-            <div className="technologies-list">
-              <div className="technologies-list-group">
-                <div>-Node.js</div>
-                <div>-Javascript</div>
+            <div className="lfContainer">
+              <div className="triangle-row">
+                <div className="technologies">
+                  <div className="triangle-group"></div>Technical Skills
+                  <div className="triangle-group"></div>
+                </div>
               </div>
-              <div className="technologies-list-group">
-                <div>-React</div>
-                <div>-HTML & CSS</div>
+              <div className="technologies-list">
+                {/* <div className="list-group"> */}
+                <div className="list-item">HTML</div>
+                <div className="list-item">Javascript</div>
+                <div className="list-item">React</div>
+                {/* </div> */}
+                {/* <div className="list-group"> */}
+                <div className="list-item">Node.js</div>
+                <div className="list-item">Ruby/Rails</div>
+                <div className="list-item">SQL</div>
+                {/* </div> */}
+                {/* <div className="list-group"> */}
+                <div className="list-item">MongoDB</div>
+                <div className="list-item">CSS</div>
+                <div className="list-item">SCSS</div>
+                {/* </div> */}
               </div>
-              <div className="technologies-list-group">
-                <div>-Ruby/Rails</div>
-                <div>-SQL</div>
-              </div>
-              <div className="technologies-list-group">-MongoDB</div>
             </div>
           </div>
         </div>
