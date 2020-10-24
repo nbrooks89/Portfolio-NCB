@@ -72,7 +72,7 @@ function Projects(props) {
                     x
                   </div>
                 </div>
-                <div>{data.description}</div>
+                <div className="decription">{data.description}</div>
                 <div className="modal-text2">{data.description2}</div>
                 <div className="external-links-modal">
                   <a href={data.github}>

@@ -46,6 +46,10 @@
   font-size: 27px;
   font-weight: 500;
 }
+.contact-button:hover {
+  background-color: $dark-orange;
+  color: white;
+}
 
 .link-mail {
   a {

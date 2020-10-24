@@ -205,23 +205,22 @@
 @media screen and (max-width: 550px) {
   .hello {
     font-size: 18px;
+    margin: 20px 0px;
     line-height: 1.5;
   }
   .img-hello img {
-    width: 300px;
+    width: 320px;
     height: auto;
   }
   .aboutMe {
     font-size: 40px;
+    margin-right: 0;
   }
   .technologies {
-    font-size: 17px;
+    font-size: 20px;
   }
   .technologies-list {
     font-size: 18px;
-  }
-  .aboutContainer {
-    margin: 0 20px;
   }
   .lfContainer {
     padding: 10px;
@@ -233,6 +232,23 @@
   }
   .helloContainer {
     margin-left: 0;
+  }
+  .technologies-list {
+    margin: 0px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(50px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-gap: 2em;
+    padding: 20px;
+  }
+  .list-item {
+    font-size: 18px;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
 }
 /*# sourceMappingURL=About.css.map */

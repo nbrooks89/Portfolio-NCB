@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat+Subrayada:wght@700&family=Noto+Sans&family=Noto+Sans+JP&family=Noto+Serif+TC:wght@300&family=Poller+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Mukta:wght@300&display=swap");
 .projectsContainer {
   height: 100vh;
   margin: 0 100px;
@@ -52,7 +53,7 @@
   position: absolute;
   top: 70px;
   border: 1px solid black;
-  font-size: 14px;
+  font-size: 18px;
   padding: 2px 5px;
   cursor: pointer;
 }
@@ -63,17 +64,19 @@
 }
 
 .description {
+  font-size: 20px;
   visibility: hidden;
   z-index: 1;
   position: absolute;
   top: 70px;
+  padding: 10px;
 }
 
 .description2 {
   z-index: 1;
   position: absolute;
   bottom: 60px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   font-style: italic;
 }
@@ -89,7 +92,7 @@
 }
 
 .external-links a .svg-inline--fa {
-  font-size: 1.6em;
+  font-size: 2em;
 }
 
 .external-links a:hover {
@@ -239,7 +242,7 @@
   color: #539c8f;
 }
 
-@media screen and (max-width: 1184px) {
+@media screen and (max-width: 1424px) {
   .projectsContainer {
     margin: 0 40px;
   }
@@ -256,15 +259,26 @@
   }
 }
 
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 711px) {
   .projects-header {
     font-size: 55px;
   }
-  .info-button {
-    display: none;
-  }
   .description {
-    visibility: visible;
+    font-size: 22px;
+    z-index: 1;
+    position: absolute;
+    top: 60px;
+  }
+  .external-links-modal a .svg-inline--fa {
+    font-size: 1.2em;
+  }
+  .app-name {
+    top: 20px;
+    font-size: 25px;
+  }
+  .description2 {
+    bottom: 70px;
+    font-size: 22px;
   }
 }
 
@@ -273,12 +287,10 @@
     margin: 0 10px;
   }
   .description {
+    font-size: 22px;
     z-index: 1;
     position: absolute;
-    top: 70px;
-  }
-  .info-button {
-    display: none;
+    top: 60px;
   }
   .projects-header {
     font-size: 35px;
@@ -294,6 +306,13 @@
   }
   .svg-inline--fa {
     font-size: 1.5em;
+  }
+  .description2 {
+    bottom: 70px;
+    font-size: 22px;
+  }
+  .modal-img {
+    display: none;
   }
 }
 /*# sourceMappingURL=Projects.css.map */

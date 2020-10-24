@@ -60,6 +60,11 @@
   font-weight: 500;
 }
 
+.contact-button:hover {
+  background-color: #d69a4c;
+  color: white;
+}
+
 .link-mail a {
   text-decoration: none;
 }
