@@ -1,7 +1,7 @@
 import React from "react";
 import "../../scss/Contact.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 function Contact() {
   return (
