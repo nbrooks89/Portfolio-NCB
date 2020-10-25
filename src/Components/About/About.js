@@ -27,21 +27,17 @@ function About() {
                 </div>
               </div>
               <div className="technologies-list">
-                {/* <div className="list-group"> */}
                 <div className="list-item">HTML</div>
                 <div className="list-item">Javascript</div>
                 <div className="list-item">React</div>
-                {/* </div> */}
-                {/* <div className="list-group"> */}
+
                 <div className="list-item">Node.js</div>
                 <div className="list-item">Ruby/Rails</div>
                 <div className="list-item">SQL</div>
-                {/* </div> */}
-                {/* <div className="list-group"> */}
+
                 <div className="list-item">MongoDB</div>
                 <div className="list-item">CSS</div>
                 <div className="list-item">SCSS</div>
-                {/* </div> */}
               </div>
             </div>
           </div>
