@@ -1,4 +1,9 @@
 .appContainer {
   height: 100vh;
 }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 /*# sourceMappingURL=App.css.map */

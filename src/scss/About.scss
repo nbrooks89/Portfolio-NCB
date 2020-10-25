@@ -58,8 +58,8 @@
   align-self: center;
   align-items: center;
   border: 5px solid $light-orange;
-  margin: 20px;
-  width: 80%;
+
+  width: 100%;
 }
 
 .technologies {
@@ -87,10 +87,10 @@
   margin: 0px;
   // overflow: hidden;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   align-items: center;
   grid-gap: 2em;
-  padding: 20px;
+  padding: 10px;
 }
 .list-item {
   font-size: 20px;
@@ -187,17 +187,12 @@
     font-size: 18px;
   }
 
-  .lfContainer {
-    padding: 10px;
+  // .lfContainer {
+  //   padding: 10px;
 
-    margin: 0;
-  }
+  //   margin: 0;
+  // }
 
-  .lfContainer {
-    padding: 10px;
-
-    margin: 0px;
-  }
   .helloContainer {
     margin-left: 0;
   }
@@ -213,5 +208,8 @@
   .list-item {
     font-size: 18px;
     justify-self: center;
+  }
+  .aboutContainer {
+    margin: 0 10px;
   }
 }
