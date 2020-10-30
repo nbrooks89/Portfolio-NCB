@@ -22,7 +22,7 @@ function Projects(props) {
       description2: " - React  - CSS  - The Dog API",
       pic: { Doglife },
       github: "https://github.com/nbrooks89/doglife",
-      appLink: "https://quantum-gearbox-291114.ue.r.appspot.com",
+      appLink: "https://dogs-rule-33.herokuapp.com",
     },
     {
       id: 2,
