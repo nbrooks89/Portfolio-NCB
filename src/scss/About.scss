@@ -58,7 +58,8 @@
   align-self: center;
   align-items: center;
   border: 5px solid $light-orange;
-
+  height: 100%;
+  margin-top: 20px;
   width: 100%;
 }
 
@@ -141,12 +142,17 @@
   }
 }
 @media screen and (max-width: 937px) {
+  .helloContainer {
+    margin: 30px;
+  }
   .hello {
     font-size: 20px;
-    margin: 20px;
+    // margin: 20px;
     line-height: 1.5;
   }
+
   .aboutMe {
+    margin-right: 0px;
     font-size: 65px;
     align-self: center;
   }
@@ -165,7 +171,7 @@
 @media screen and (max-width: 550px) {
   .hello {
     font-size: 18px;
-    margin: 20px 0px;
+
     line-height: 1.5;
   }
   .img-hello {
@@ -187,15 +193,6 @@
     font-size: 18px;
   }
 
-  // .lfContainer {
-  //   padding: 10px;
-
-  //   margin: 0;
-  // }
-
-  .helloContainer {
-    margin-left: 0;
-  }
   .technologies-list {
     margin: 0px;
     // overflow: hidden;

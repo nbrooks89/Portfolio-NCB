@@ -9,14 +9,27 @@ function Home() {
   return (
     <>
       <div className=" homeContainer">
-        <div className="box">
-          <div className="myName">
-            <div className="triangle"></div>Nicole Brooks
+        <div className="left-side-home">
+        <div className="box1">
+            <div className="triangle"></div>
+          <div className="myName1">Nicole
+           
+          {/* <div className="underline"></div> */}
+          <div className="webDeveloper1"> Full Stack</div>
+</div>
+          </div>
+
+        </div>
+        <div className="right-side-home">
+        <div className="box2">
+          <div className="myName2">
+           Brooks
+          {/* <div className="underline"></div> */}
+          <div className="webDeveloper2"> Web Developer</div>
+</div>
             <div className="triangleup"></div>
           </div>
 
-          <div className="underline"></div>
-          <div className="webDeveloper"> Full Stack Web Developer</div>
         </div>
         <div className="home-scroll-button">
           <ScrollLink

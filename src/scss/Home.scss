@@ -4,33 +4,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat+Subrayada:wght@700&family=Noto+Sans&family=Noto+Sans+JP&family=Noto+Serif+TC:wght@300&family=Poller+One&display=swap");
 .homeContainer {
   height: 100vh;
-  background-color: rgb(214, 154, 76);
+  position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  justify-content: space-between;
+  align-items: flex-end;
+  // justify-content: center;
+  z-index: 1;
   border-bottom: 3px solid rgb(82, 80, 78);
 }
+.left-side-home {
+  height: 100%;
+  width: 100%;
+  background-color: $light-green;
+}
+.right-side-home {
+  height: 100%;
+  width: 100%;
+  background-color: $light-orange;
+}
 
-.box {
+.box1 {
   margin-top: 200px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: flex-end;
+  margin-right: 8px;
+}
+.box2 {
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-left: 5px;
 }
 .triangle {
   margin-right: 10px;
   margin-left: 10px;
+  margin-bottom: 30px;
   align-self: center;
   width: 0;
   height: 0;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
-  border-top: 50px solid rgb(3, 3, 3);
+  border-bottom: 50px solid $dark-orange;
 }
 .triangleup {
+  margin-bottom: 30px;
   margin-right: 10px;
   margin-left: 10px;
   align-self: center;
@@ -39,13 +58,22 @@
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
 
-  border-bottom: 50px solid rgb(2, 2, 2);
+  border-bottom: 50px solid $dark-green;
 }
 
-.myName {
+.myName1 {
   display: flex;
+  flex-direction: column;
   font-size: 85px;
   font-family: "Montserrat Subrayada", sans-serif;
+  color: $dark-orange;
+}
+.myName2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 85px;
+  font-family: "Montserrat Subrayada", sans-serif;
+  color: $dark-green;
 }
 
 .underline {
@@ -54,11 +82,21 @@
   background-color: black;
 }
 
-.webDeveloper {
+.webDeveloper1 {
+  font-size: 25px;
+  margin-top: 10px;
+  text-align: end;
+}
+.webDeveloper2 {
+  text-align: start;
   font-size: 25px;
   margin-top: 10px;
 }
 .home-scroll-button {
+  position: absolute;
+  color: $dark-green;
+  bottom: 20;
+  left: 706;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,38 +121,56 @@
 }
 
 @media screen and (max-width: 894px) {
-  .myName {
+  .myName1 {
+    font-size: 65px;
+  }
+  .myName2 {
     font-size: 65px;
   }
 }
+
 @media screen and (max-width: 730px) {
-  .myName {
+  .myName1 {
+    font-size: 50px;
+  }
+  .myName2 {
     font-size: 50px;
   }
   .triangle {
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
-
-    border-top: 40px solid rgb(3, 3, 3);
   }
   .triangleup {
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
-
-    border-bottom: 40px solid rgb(2, 2, 2);
   }
   .underline {
     height: 2px;
     width: 250px;
   }
+  .webDeveloper1 {
+    font-size: 22px;
+  }
+  .webDeveloper2 {
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 600px) {
-  .myName {
-    font-size: 45px;
+  .myName1 {
+    font-size: 38px;
+  }
+  .myName2 {
+    font-size: 38px;
     text-align: center;
     // font-family: "Press Start 2P", cursive;
     font-family: "Montserrat Subrayada", sans-serif;
+  }
+  .webDeveloper1 {
+    font-size: 18px;
+  }
+  .webDeveloper2 {
+    font-size: 18px;
   }
 
   .underline {
@@ -123,12 +179,11 @@
     background-color: black;
   }
 
-  .webDeveloper {
-    font-size: 25px;
-    margin-top: 10px;
+  .box1 {
+    margin-top: 300px;
+    // margin-left: 25px;
   }
-
-  .box {
+  .box2 {
     margin-top: 300px;
     // margin-left: 25px;
   }
@@ -137,16 +192,14 @@
   // }
 
   .triangleup {
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-
-    border-bottom: 30px solid rgb(2, 2, 2);
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 25px solid $dark-green;
   }
 
   .triangle {
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-
-    border-top: 30px solid rgb(3, 3, 3);
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 25px solid $dark-orange;
   }
 }
