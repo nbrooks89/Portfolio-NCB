@@ -19,7 +19,7 @@ function Contact() {
             </div>
           </a>
         </div>
-        <a href="https://www.linkedin.com/in/nicole-brooks89/">linkendin</a>
+        {/* <a href="https://www.linkedin.com/in/nicole-brooks89/">linkendin</a> */}
       </div>
     </>
   );

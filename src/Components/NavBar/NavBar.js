@@ -5,6 +5,7 @@ import IosWoman from "react-ionicons/lib/IosWoman";
 import IosApps from "react-ionicons/lib/IosApps";
 import IosBriefcase from "react-ionicons/lib/IosBriefcase";
 
+
 import "../../scss/NavBar.scss";
 import Scroll from "react-scroll";
 
@@ -28,6 +29,7 @@ const NavBar = (props) => {
             smooth={true}
             offset={-70}
             duration={500}
+            onClick={() => setNavOpen(!navOpen)}
           >
             <i>
               <IosHome fontSize="20px" color="white" />
@@ -42,6 +44,7 @@ const NavBar = (props) => {
             smooth={true}
             offset={-70}
             duration={500}
+            onClick={() => setNavOpen(!navOpen)}
           >
             <i>
               <IosWoman fontSize="20px" color="white" />
@@ -56,6 +59,7 @@ const NavBar = (props) => {
             smooth={true}
             offset={-70}
             duration={500}
+            onClick={() => setNavOpen(!navOpen)}
           >
             <i>
               <IosBriefcase fontSize="20px" color="white" />
@@ -70,6 +74,7 @@ const NavBar = (props) => {
             smooth={true}
             offset={-70}
             duration={500}
+            onClick={() => setNavOpen(!navOpen)}
           >
             <i>
               <IosMail fontSize="23px" color="white" />

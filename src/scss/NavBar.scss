@@ -104,6 +104,9 @@
       &.active {
         left: 0px;
       }
+      &.notActive {
+        left: -240px;
+      }
 
       nav-link {
         width: 100px;
