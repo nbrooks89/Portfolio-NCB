@@ -16,22 +16,23 @@
   height: 100%;
   width: 100%;
   background-color: $light-green;
+  display: flex;
+  justify-content: flex-end;
 }
 .right-side-home {
   height: 100%;
   width: 100%;
   background-color: $light-orange;
+  display: flex;
 }
 
 .box1 {
-  margin-top: 200px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   margin-right: 8px;
 }
 .box2 {
-  margin-top: 200px;
   display: flex;
   align-items: center;
   justify-content: start;

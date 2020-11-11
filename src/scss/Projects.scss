@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat+Subrayada:wght@700&family=Noto+Sans&family=Noto+Sans+JP&family=Noto+Serif+TC:wght@300&family=Poller+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Mukta:wght@300&display=swap");
 .projectsContainer {
-  height: 100vh;
   margin: 0 100px;
+  min-height: 100vh;
   margin-top: 70px;
   display: flex;
   flex-direction: column;
@@ -19,13 +19,14 @@
   margin: 0px;
   // overflow: hidden;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   align-items: end;
   grid-gap: 2em;
   margin-top: 70px;
 }
 
 .projects {
+  position: relative;
   border: 2px solid #343835;
   text-align: center;
   display: grid;
@@ -33,22 +34,23 @@
   align-items: center;
   padding: 0;
   background-color: $light-green;
-  position: relative;
 }
 .info-button {
-  background-color: transparent;
-  z-index: 1;
-  position: absolute;
-  top: 70px;
-  border: 1px solid black;
+  background-color: $dark-green;
+  border: 2px solid black;
+  color: white;
   font-size: 18px;
-  padding: 2px 5px;
+  padding: 7px 7px;
+  width: 100px;
+  margin-top: 5px;
+  margin-bottom: 10px;
   cursor: pointer;
+  font-weight: 600;
 }
 .info-button:hover {
-  background-color: $dark-green;
-
-  border: 1px solid black;
+  border: 2px solid black;
+  background-color: $light-green;
+  color: $dark-green;
 }
 .description {
   font-size: 20px;
@@ -59,10 +61,7 @@
   padding: 10px;
 }
 .description2 {
-  z-index: 1;
-  position: absolute;
-  bottom: 60px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   font-style: italic;
 }
@@ -70,7 +69,8 @@
 .external-links {
   z-index: 1;
   position: absolute;
-  bottom: 10px;
+  top: 20px;
+  right: 20px;
   // left: 25px;
 }
 
@@ -87,8 +87,10 @@
 }
 
 .projects-img {
-  opacity: 0.1;
-  max-width: 100%;
+  margin: 2px;
+  opacity: 0.2;
+  max-width: 98%;
+
   // position: relative;
   // z-index: 2;
 }
@@ -111,21 +113,19 @@
 }
 .app-name {
   display: flex;
-  align-items: center;
   justify-content: center;
-  top: 20px;
-  font-size: 25px;
-  z-index: 1;
-  position: absolute;
-  width: 100%;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 600;
+  margin-top: 5px;
 }
-.underline-name {
-  height: 1px;
-  width: 20px;
-  background-color: $dark-green;
-  margin: 0 10px;
+.project-inner-container-2 {
+  border-top: 1px solid black;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .underline-projects {
   height: 4px;

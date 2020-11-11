@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "../../scss/Projects.scss";
-import Doglife from "./doglife.png";
-import Starsale from "./starsale.png";
-import Skatespots from "./skatespots.png";
+import Doglife from "./dog-project.png";
+import Starsale from "./project-sale.png";
+import Skatespots from "./spots-project.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
@@ -16,11 +16,11 @@ function Projects(props) {
   const data = [
     {
       id: 1,
-      name: "Barking lot",
+      name: "Dog Dictionary",
       description:
-        "The Barking Lot is a web app for learning the different dog breeds! Giving you detailed information and pictures for every breed. Including a favoriting sytem to keep track of your favorites!",
+        "Dog Dictionary is a web app for learning the different dog breeds! Giving you detailed information and pictures for every breed. Including a favoriting sytem to keep track of your favorites!",
       description2: " - React  - CSS  - The Dog API",
-      pic: { Doglife },
+      pic: Doglife ,
       github: "https://github.com/nbrooks89/doglife",
       appLink: "https://dogs-rule-33.herokuapp.com",
     },
@@ -30,7 +30,7 @@ function Projects(props) {
       description:
         "Skate Spots app is a location based skate app that lets users create and share there favorite skate spots and skateparks with other skaters. Traveling to a new city and dont know where to skate? Skate Spots has you covered!",
       description2: "  - React  - Node.js -express  - MongoDB",
-      pic: { Doglife },
+      pic: Skatespots ,
       github: "https://github.com/nbrooks89/doglife",
       appLink: "https://skate-spots-23.herokuapp.com",
     },
@@ -40,7 +40,7 @@ function Projects(props) {
       description:
         "Finding a yard sale has never been easier! The Star Sale web app was built to fufill all your yard-sale needs. You can filter yard sales by distance and date, and star your favorite ones! If you want to host your own sale, no problem! you can create,update, and delete a sale at any time.",
       description2: " - React  - Ruby/Rails - Postgres SQL",
-      pic: { Doglife },
+      pic:  Starsale,
       github: "https://github.com/TANC-LEARN-Bravo2020/StarSale",
       appLink: "https://frozen-falls-51923.herokuapp.com/",
     },
@@ -59,7 +59,7 @@ function Projects(props) {
           >
             <div className="modal-inner">
               <div className="modal-img">
-                <img src={Doglife} alt=" dog modal pic" />
+                <img src={data.pic} alt=" dog modal pic" />
               </div>
 
               <div className="modal-text">
@@ -93,20 +93,20 @@ function Projects(props) {
         <div className="projects-inner-container">
           {data.map((data) => (
             <div className="projects">
-              <img className="projects-img" src={Doglife} alt="dog app pic" />
-
-              <div className="app-name">
-                <div className="underline-name"></div> {data.name}
-                <div className="underline-name"></div>
-              </div>
+              <img className="projects-img" src={data.pic} alt="dog app pic" />
+          <div className="project-inner-container-2">
+           <div className="app-name">
+            {data.name}
+               </div>
               <div
                 className="info-button"
                 onClick={() => toggleModalState(data.id)}
               >
                 About
               </div>
-              <div className="description">{data.description}</div>
-              <div className="description2">{data.description2}</div>
+              
+              {/* <div className="description2">{data.description2}</div> */}
+              </div>
               <div className="external-links">
                 <a href={data.github}>
                   <FontAwesomeIcon icon={faGithub} />
