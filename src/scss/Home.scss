@@ -17,7 +17,8 @@
   width: 100%;
   background-color: $light-green;
   display: flex;
-  justify-content: flex-end;
+  // justify-content: flex-start;
+  // align-items: flex-end;
 }
 .right-side-home {
   height: 100%;
@@ -28,6 +29,8 @@
 
 .box1 {
   display: flex;
+  width: 100%;
+
   align-items: center;
   justify-content: flex-end;
   margin-right: 8px;
@@ -138,12 +141,14 @@
     font-size: 50px;
   }
   .triangle {
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 35px solid $dark-orange;
   }
   .triangleup {
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
+    border-bottom: 40px solid $dark-green;
   }
   .underline {
     height: 2px;
@@ -163,7 +168,7 @@
   }
   .myName2 {
     font-size: 38px;
-    text-align: center;
+    // text-align: center;
     // font-family: "Press Start 2P", cursive;
     font-family: "Montserrat Subrayada", sans-serif;
   }
@@ -179,18 +184,6 @@
     width: 200px;
     background-color: black;
   }
-
-  .box1 {
-    margin-top: 300px;
-    // margin-left: 25px;
-  }
-  .box2 {
-    margin-top: 300px;
-    // margin-left: 25px;
-  }
-  // .arrow {
-  //   margin-left: 40px;
-  // }
 
   .triangleup {
     border-left: 13px solid transparent;

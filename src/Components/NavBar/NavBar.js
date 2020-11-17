@@ -27,7 +27,7 @@ const NavBar = (props) => {
             to="home"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-20}
             duration={500}
             onClick={() => setNavOpen(!navOpen)}
           >
@@ -42,7 +42,7 @@ const NavBar = (props) => {
             to="about"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-20}
             duration={500}
             onClick={() => setNavOpen(!navOpen)}
           >
@@ -57,7 +57,7 @@ const NavBar = (props) => {
             to="portfolio"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-20}
             duration={500}
             onClick={() => setNavOpen(!navOpen)}
           >
@@ -72,7 +72,7 @@ const NavBar = (props) => {
             to="contact"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-20}
             duration={500}
             onClick={() => setNavOpen(!navOpen)}
           >

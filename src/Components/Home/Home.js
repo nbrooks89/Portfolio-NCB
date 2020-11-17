@@ -37,7 +37,7 @@ function Home() {
             to="about"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-20}
             duration={500}
           >
             <FontAwesomeIcon icon={faAngleDoubleDown} />
