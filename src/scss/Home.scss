@@ -33,13 +33,14 @@
 
   align-items: center;
   justify-content: flex-end;
-  margin-right: 8px;
+  margin-right: 5px;
 }
 .box2 {
   display: flex;
   align-items: center;
   justify-content: start;
   margin-left: 5px;
+  width: 100%;
 }
 .triangle {
   margin-right: 10px;
@@ -146,9 +147,9 @@
     border-bottom: 35px solid $dark-orange;
   }
   .triangleup {
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-bottom: 40px solid $dark-green;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 35px solid $dark-green;
   }
   .underline {
     height: 2px;
@@ -164,19 +165,20 @@
 
 @media screen and (max-width: 600px) {
   .myName1 {
-    font-size: 38px;
+    font-size: 40px;
   }
   .myName2 {
-    font-size: 38px;
+    font-size: 40px;
+    margin-right: 15px;
     // text-align: center;
     // font-family: "Press Start 2P", cursive;
     font-family: "Montserrat Subrayada", sans-serif;
   }
   .webDeveloper1 {
-    font-size: 18px;
+    font-size: 19px;
   }
   .webDeveloper2 {
-    font-size: 18px;
+    font-size: 19px;
   }
 
   .underline {
@@ -186,14 +188,10 @@
   }
 
   .triangleup {
-    border-left: 13px solid transparent;
-    border-right: 13px solid transparent;
-    border-bottom: 25px solid $dark-green;
+    display: none;
   }
 
   .triangle {
-    border-left: 13px solid transparent;
-    border-right: 13px solid transparent;
-    border-bottom: 25px solid $dark-orange;
+    display: none;
   }
 }

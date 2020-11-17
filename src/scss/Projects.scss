@@ -4,6 +4,7 @@
 .projectsContainer {
   margin: 0 100px;
   min-height: 100vh;
+
   margin-top: 70px;
   display: flex;
   flex-direction: column;
@@ -19,7 +20,7 @@
   margin: 0px;
   // overflow: hidden;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   align-items: end;
   grid-gap: 2em;
   margin-top: 70px;
@@ -265,9 +266,9 @@
   .info-button {
   }
   .projects-header {
-    font-size: 35px;
+    font-size: 45px;
     // margin-left: 55px;
-    margin-top: 30px;
+    margin-top: 50px;
   }
   .projects-inner-container {
     // margin-left: 45px;
@@ -288,5 +289,11 @@
   }
   .modal-img {
     display: none;
+  }
+  .projects {
+    width: 100%;
+  }
+  .projects-img {
+    width: 100%;
   }
 }

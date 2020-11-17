@@ -8,9 +8,9 @@
   height: 60px;
   width: 100%;
   background-color: $dark-green;
-
+  border-bottom: 1px solid white;
   position: fixed;
-  box-shadow: 1px 1px 2px rgb(66, 65, 65);
+  // box-shadow: 3px 3px 20px white;
   z-index: 3;
   @keyframes slidein {
     from {
