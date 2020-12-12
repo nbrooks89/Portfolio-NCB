@@ -20,7 +20,7 @@ function Projects(props) {
       id: 1,
       name: "Dog Dictionary",
       description:
-        "Dog Dictionary is a web app for learning the different dog breeds! Giving you detailed information and pictures for every breed. Including a favoriting sytem to keep track of your favorites!",
+        "An app for learning about different dog breeds utlizing an API.",
       description2: " - React  - CSS  - The Dog API",
       pic: Doglife,
       github: "https://github.com/nbrooks89/doglife",
@@ -30,7 +30,7 @@ function Projects(props) {
       id: 2,
       name: "Skate Spots",
       description:
-        "Skate Spots app is a location based skate app that lets users create and share there favorite skate spots and skateparks with other skaters. Traveling to a new city and dont know where to skate? Skate Spots has you covered!",
+        "A full stack app for users to create & share there favorite skate spots. Features include: user authentication, photo uploading, viewing current distance to location, & full CRUD operation on user’s “spots”.",
       description2: "  - React  - Node.js -express  - MongoDB",
       pic: Skatespots,
       github: "https://github.com/nbrooks89/Spots",
@@ -40,7 +40,7 @@ function Projects(props) {
       id: 3,
       name: "Star Sale",
       description:
-        "Finding a yard sale has never been easier! The Star Sale web app was built to fufill all your yard-sale needs. You can filter yard sales by distance and date, and star your favorite ones! If you want to host your own sale, no problem! you can create,update, and delete a sale at any time.",
+        "A full stack yard sale app. That allows users to filter yard sales by distance & date, star favorite ones.Features include: User authentication, location capability, favoriting, and full CRUD operations.",
       description2: " - React  - Ruby/Rails - Postgres SQL",
       pic: Starsale,
       github: "https://github.com/TANC-LEARN-Bravo2020/StarSale",
@@ -50,7 +50,7 @@ function Projects(props) {
       id: 4,
       name: "Movie App",
       description:
-        "Movie App allows a user to search for movies, and find detailed information about the movie. Movie app has a favoriting sytem to keep track of your favorite movies.",
+        "An app for searching movies utlizing a robust API. Including a built in favoriting sytem.",
       description2: " - React  - CSS - The Movie Database API",
       pic: Movieapp,
       github: "https://github.com/nbrooks89/movie-app",
