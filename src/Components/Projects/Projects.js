@@ -33,7 +33,7 @@ function Projects(props) {
         "Skate Spots app is a location based skate app that lets users create and share there favorite skate spots and skateparks with other skaters. Traveling to a new city and dont know where to skate? Skate Spots has you covered!",
       description2: "  - React  - Node.js -express  - MongoDB",
       pic: Skatespots,
-      github: "https://github.com/nbrooks89/doglife",
+      github: "https://github.com/nbrooks89/Spots",
       appLink: "https://skate-spots-23.herokuapp.com",
     },
     {
